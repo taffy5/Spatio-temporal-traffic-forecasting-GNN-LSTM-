@@ -8,6 +8,7 @@ The project models roads as a graph and learns both:
 
 This approach significantly outperforms classical time-series models such as ARIMA and XGBoost.
 
+Data - https://github.com/liyaguang/DCRNN/tree/master/data
 ---
 
 ## 🔍 Problem Statement
@@ -96,9 +97,9 @@ Why hybrid?
 ✅ Better congestion detection  
 ✅ More stable predictions during peak hours  
 
-pip install -r requirements.txt -> Installation
-python src/train.py -> Train
-uvicorn src.api:app --reload -> Start API
-POST /predict -> Inference
-docker build -t traffic-forecast . -> Docker (build)
-docker run -p 8000:8000 traffic-forecast -> Docker (run)
+- `pip install -r requirements.txt` -> Installation
+- `python src/train.py` -> Train
+- `uvicorn src.api:app --reload` -> Start API
+- `POST /predict` -> Inference
+-`docker build -t traffic-forecast .` -> Docker (build)
+-`docker run -p 8000:8000 traffic-forecast` -> Docker (run)
